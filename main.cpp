@@ -48,7 +48,7 @@ string to_additional(string inverted, int bit_size){
         else
         inverted[i] = '0';
     }
-    return "Overflow happened: " + string(bit_size, '0');
+    return "Overflow happened: " + string(bit_size+1, '0');
 }
 
 int main()
