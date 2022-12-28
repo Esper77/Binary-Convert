@@ -34,8 +34,10 @@ string to_inverted(string straight, int bit_size){
             straight[i] = '1';
         else
             straight[i] = '0';
+    return straight;
     }
 }
+
 
 int main()
 {
@@ -54,7 +56,10 @@ int main()
         bit_size -= 1;
         straight = '1' + to_straight(number, bit_size);
         cout << straight;
-        cout << to_inverted(straight, bit_size);
+        inverted = to_inverted(straight, bit_size);
+        cout << inverted;
+        cout << to_additional(inverted, bit_size)
+        
     }
 
 
